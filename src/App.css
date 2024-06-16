@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+#root{
+  width: 100%;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100% ;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.calculater{
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+
+}
+form input{
+border: none;
+outline: 0;
+width: 60px;
+height: 60px;
+font-size: 16px;
+background-color: rgb(70, 70, 129);
+margin: 2px;
+border-radius: 10px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input[type="button"]:hover{
+  background-color: blueviolet;
+}
+.display{
+  display: flex;
+justify-content: flex-end;
+flex: 1;
+margin: 5px 0px 15px 0px;
+ 
+}
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 40px;
+  padding: 5px 15px;
+  background-color: rgb(31, 27, 27);
+}
+.equal{
+  width: 120px;
 }
