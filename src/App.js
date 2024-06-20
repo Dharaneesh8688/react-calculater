@@ -9,7 +9,7 @@ function App() {
 <div className="calculater">
   <form action="">
     <div  className='display'>
-      <input type="text" value={value} readonly/>
+      <input type="text" value={value} Readonly/>
     </div>
     <div>
       <input type="button" value="AC"  onClick={e => setValue('')}  />
